@@ -1,4 +1,7 @@
+import java.io.PrintStream;
+import java.io.PrintStream;
 public class DataTypes {
+    int abc=10;
     public static void main(String[] args){
         int a=10;  // declaring and initialing the data
         int b;     // declaring b variable
@@ -10,8 +13,11 @@ public class DataTypes {
         System.out.print("\""+a+"+"+b+"="+(a+b)+"\"");
 
         String name = "kasi";
-        //10+20=30
 
+        PrintStream obj = System.out;
+        obj.println("print a value ");
+        //10+20=30
+       Math.pow(new DataTypes().abc,2);
     }
   // Sir can we print output as “10+20=30”
 }

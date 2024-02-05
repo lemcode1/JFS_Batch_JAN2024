@@ -1,6 +1,8 @@
 import java.io.PrintStream;
 import java.io.PrintStream;
 public class DataTypes {
+
+
     int abc=10;
     public static void main(String[] args){
         int a=10;  // declaring and initialing the data

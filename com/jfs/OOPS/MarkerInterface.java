@@ -1,6 +1,4 @@
-package OOPS;
-
-import java.io.ObjectOutputStream;
+package com.jfs.OOPS;
 
 interface Marker1 {
 

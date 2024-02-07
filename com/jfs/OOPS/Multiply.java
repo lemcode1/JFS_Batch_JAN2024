@@ -1,4 +1,4 @@
-package OOPS;
+package com.jfs.OOPS;
 
 public class Multiply {
     public int multiplyValue(int a, int b) {

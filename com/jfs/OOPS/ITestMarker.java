@@ -1,6 +1,4 @@
-package OOPS;
-
-import java.io.Serializable;
+package com.jfs.OOPS;
 
 class Employee3 implements Cloneable{
     public String name;

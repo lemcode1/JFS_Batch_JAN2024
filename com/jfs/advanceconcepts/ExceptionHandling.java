@@ -20,7 +20,7 @@ public class ExceptionHandling {
             int division = a / b; // logic
             System.out.println("Divsion of a and b is :" + division);
         } catch(ArithmeticException | NumberFormatException ne) {
-            int lineNumber = get
+
 //            ne.printStackTrace();
             System.out.println(ne.getLocalizedMessage());
             ne.getCause().getStackTrace();

@@ -1,8 +1,9 @@
 package com.jfs.advanceconcepts;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Scanner;
+
+
 
 public class ExceptionHandling {
 
@@ -11,7 +12,6 @@ public class ExceptionHandling {
         Connection conn = null;
         try {
 //            conn.createStatement();
-
             sc = new Scanner(System.in);
             System.out.print("Enter a value");
             int a = Integer.parseInt(sc.nextLine()); // abc
@@ -20,10 +20,11 @@ public class ExceptionHandling {
             int division = a / b; // logic
             System.out.println("Divsion of a and b is :" + division);
         } catch(ArithmeticException | NumberFormatException ne) {
-
-//            ne.printStackTrace();
-            System.out.println(ne.getLocalizedMessage());
-            ne.getCause().getStackTrace();
+            System.out.println(ne);
+            System.out.println();
+            ne.printStackTrace();
+//            System.out.println(ne.getLocalizedMessage());
+//            ne.getCause().getStackTrace();
             System.out.println(ne.getMessage());
             if (ne instanceof NumberFormatException) {
                 System.out.println("Provide only integer value, looks like you have entered string values");

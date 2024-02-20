@@ -1,8 +1,5 @@
-package com.jfs.advanceconcepts;
+package com.jfs.advanceconcepts.exceptions;
 
-
-import com.jfs.advanceconcepts.exceptions.PatientNotFoundException;
-import com.jfs.advanceconcepts.exceptions.UnimplementedException;
 
 class Patient {
     String patientId;

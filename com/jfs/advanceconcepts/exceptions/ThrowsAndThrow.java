@@ -1,4 +1,4 @@
-package com.jfs.advanceconcepts;
+package com.jfs.advanceconcepts.exceptions;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -65,7 +65,7 @@ public class BankAccountThreadSafe {
         t2.start();
         t1.join();
         t2.join();
-        System.out.println("Final balance is :"+account.balance);
+        System.out.println("Final balance is :"+account.balance); // main thread
     }
 }
 //Mohancurrent balance is : 1000

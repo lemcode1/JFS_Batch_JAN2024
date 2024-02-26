@@ -47,8 +47,11 @@ public class ArrayListDemo {
 //        arrayList.add(50);
 //        arrayList.add(60);
 //        arrayList.add(70);
+        arrayList.add(null);
+        arrayList.add(null);
         System.out.println("arraylist " +arrayList);
         System.out.println("arraylist size " +arrayList.size());
+
         if(arrayList!=null && arrayList.isEmpty()) {
             System.out.println("arraylist is empty");
         }
@@ -58,16 +61,12 @@ public class ArrayListDemo {
         studentList.add(new Student("Prabhas", 1122));
         studentList.add(new Student("Ntr", 1133));
         studentList.add(new Student("RamCharan", 1133));
-        Iterator studentIterator = studentList.iterator();
+        Iterator<Student> studentIterator = studentList.iterator();
         while(studentIterator.hasNext()) {
-            Student student = (Student) studentIterator.next();
+//            Student student = studentIterator.next();
+            System.out.println(studentIterator.next());
             studentIterator.remove();
-            System.out.println(student);
         }
-
-       /* studentList.forEach(obj ->{
-            System.out.println(obj);
-        });*/
         System.out.println("studentList size " +studentList.size());
         for(Student student: studentList) {
             System.out.println(student);

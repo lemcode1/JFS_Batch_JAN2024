@@ -18,6 +18,7 @@ public class LinkedListDemo {
         LinkedList linkedList = new LinkedList();
         System.out.println(linkedList.size());
         linkedList.add(10);
+
         linkedList.add(20);
         linkedList.add(30);
         System.out.println(linkedList.size());

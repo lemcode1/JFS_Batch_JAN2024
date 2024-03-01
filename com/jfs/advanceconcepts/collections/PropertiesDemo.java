@@ -22,10 +22,11 @@ public class PropertiesDemo {
 
         // To get all the system properties
         Properties systemProps = System.getProperties();
-        Set set = systemProps.entrySet();
-        Iterator iterator = set.iterator();
+
+        Set<Map.Entry<Object, Object>> set = systemProps.entrySet();
+        Iterator<Map.Entry<Object, Object>> iterator = set.iterator();
         while(iterator.hasNext()) {
-            Map.Entry entry = (Map.Entry) iterator.next();
+            Map.Entry entry = iterator.next();
             System.out.println("key is "+entry.getKey()+ " value is : "+entry.getValue());
         }
     }

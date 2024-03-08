@@ -36,6 +36,7 @@ public class ReadCsvFromJava {
             List<PersonBean> personList = new ArrayList<>();
             FileReader fileReader = new FileReader("Person_data.csv");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
+
             String lineData = "";
             String header = bufferedReader.readLine(); // this will return first line of csv which is header
             while((lineData = bufferedReader.readLine())!= null) { // reading each line from csv file

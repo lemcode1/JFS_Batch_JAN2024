@@ -7,17 +7,14 @@ import java.sql.Statement;
 
 public class JdbcConnectivity {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://127.0.0.1:3306/jfs_33";
-        String username = "root";
-        String password = "root";
-        String driverClassName = "com.mysql.jdbc.Driver";
         Connection connection = null;
         Statement statement = null;
         try {
-            Class.forName(driverClassName);
-            connection = DriverManager.getConnection(url, username, password);
+            connection = DatabaseConnection.getDatabaseConnection();
+            connection.setAutoCommit(false);
             statement = connection.createStatement();
             String query = "insert into emp(empno, ename,deptno) values(1122, 'JDBC', 40)";
+
             statement.execute(query);
             connection.commit(); // it is mandatory only when you are executing DML query
             System.out.println("Insertion is successfull");

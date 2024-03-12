@@ -22,7 +22,7 @@ public class DatabaseConnection {
     public static void loadDatabaseProperties() throws IOException {
         FileReader reader = new FileReader("C:\\Users\\kasiy\\IdeaProjects\\JFS_Batch_JAN2024\\com\\jfs\\advancedjava\\database.properties");
         properties = new Properties();
-        properties.load(reader);
+        properties.load(reader); //
     }
 
     public static Connection getDatabaseConnection() {
@@ -33,6 +33,7 @@ public class DatabaseConnection {
             String password = properties.getProperty("database_password");
             // load the driver class
             Class.forName(properties.getProperty("database_driverClassName"));
+//            Class.forName("com.mysql.jdbc.Driver");
             // Create a database connection
             conn = DriverManager.getConnection(url, username, password);
         } catch (SQLException sq) {
@@ -42,5 +43,6 @@ public class DatabaseConnection {
         }
         return conn;
     }
+
 
 }
